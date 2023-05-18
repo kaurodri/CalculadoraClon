@@ -57,7 +57,16 @@ function calcular() {
     if (resultado - 1 < valor2 && valor2 < resultado + 1) {
         alert("Parabéns! Seu Clon está Perfeito.");
     } else {
-        alert("Ops! Seu Clon não está Perfeito. Para que ele seja perfeito o valor deveria ser " + Math.trunc(resultado) + ".");
+        let tt = resultado - valor2;
+
+        const banco = {
+            "AT" : "Ataque",
+            "CT" : "",
+            "BL" : "",
+            "EV" : "",
+            "HP" : "",
+        }
+        alert("Ops! Seu Clon não está Perfeito. Você está perdendo " + Math.trunc(tt) + " de " + opcao);
     }
 }
 
@@ -70,3 +79,22 @@ function calcular() {
         }
     });
 }
+
+{
+    let opcao = document.getElementById("opcao");
+    var textoClon = document.getElementById("textoClon");
+
+    opcao.addEventListener("change", function () {
+        if (opcao.value == "AT") {
+            textoClon.textContent = "Ataque";
+        } if (opcao.value == "CT") {
+            textoClon.textContent = "Golpe Crítico";
+        } if (opcao.value == "BL") {
+            textoClon.textContent = "Bloquear";
+        } if (opcao.value == "EV") {
+            textoClon.textContent = "Evitar";
+        } if (opcao.value == "HP") {
+            textoClon.textContent = "HP Max";
+        }
+    })
+}   
