@@ -54,19 +54,22 @@ function calcular() {
     }
 
     // Verificar se o resultado bate com o valor da segunda caixa de entrada
-    if (resultado - 1 < valor2 && valor2 < resultado + 1) {
-        alert("Parabéns! Seu Clon está Perfeito.");
-    } else {
-        let tt = resultado - valor2;
+    if (opcao == "AT" || opcao == "HP") {
 
-        const banco = {
-            "AT" : "Ataque",
-            "CT" : "",
-            "BL" : "",
-            "EV" : "",
-            "HP" : "",
+        if (resultado - 1 < valor2 && valor2 < resultado + 1) {
+            alert("Parabéns! Seu Clon está Perfeito.");
+        } else {
+            alert("Ops! Seu Clon não está Perfeito. Você está perdendo " + Math.trunc(resultado - valor2) + " de " + opcao);
         }
-        alert("Ops! Seu Clon não está Perfeito. Você está perdendo " + Math.trunc(tt) + " de " + opcao);
+
+    } else {
+
+        if (valor2.toFixed(2) == resultado.toFixed(2)) {
+            alert("Parabéns! Seu Clon está Perfeito.");
+        } else {
+            alert("Ops! Seu Clon não está Perfeito. Você está perdendo " + (resultado - valor2).toFixed(2) + "% de " + opcao);
+        }
+
     }
 }
 
