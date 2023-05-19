@@ -40,7 +40,7 @@ function calcular() {
             var resultado = (base * lista.get(opcao)[potencia - 1]) / 100;
             break;
         case "BL":
-            var resultado = (base * lista.get(opcao)[potencia - 1]) / 100;
+            var resultado = (100 * lista.get(opcao)[potencia - 1]) / 100;
             break;
         case "EV":
             var resultado = (base * lista.get(opcao)[potencia - 1]) / 100;
@@ -62,7 +62,16 @@ function calcular() {
             alert("Ops! Seu Clon não está Perfeito. Você está perdendo " + Math.trunc(resultado - valor2) + " de " + opcao);
         }
 
-    } else {
+    }
+    if (opcao == "BL") {
+
+        if (valor2.toFixed(2) == resultado.toFixed(2)) {
+            alert("Parabéns! Seu Clon está Perfeito.");
+        } else {
+            alert("Ops! Seu Clon não está Perfeito. Você está perdendo " + (resultado - valor2).toFixed(2) + "% de " + opcao);
+        }
+    }
+    if (opcao == "EV" || opcao == "CT") {
 
         if (valor2.toFixed(2) == resultado.toFixed(2)) {
             alert("Parabéns! Seu Clon está Perfeito.");
@@ -74,30 +83,88 @@ function calcular() {
 }
 
 {
+    document.getElementById("opcao").addEventListener("change", function () {
+        if (document.getElementById("opcao").value == "BL") {
+            document.getElementById("valor1").type = 'text';
+            document.getElementById("valor1").value = "00.00%";
+            document.getElementById("valor1").readOnly = true;
+            
+        } else {
+            document.getElementById("valor1").type = 'number';
+            document.getElementById("valor1").value = "0";
+            document.getElementById("valor1").readOnly = false;
+        }
+    })
+}
+
+{
     const myInput = document.getElementById("valor2");
     myInput.addEventListener("input", function () {
-        if (myInput.value > (Number(document.getElementById("valor1").value) * lista.get(document.getElementById("opcao").value)[Number(document.getElementById("potencia").value) - 1]) / 100) {
-            myInput.value = '';
-            alert("Por favor coloque um número válido.");
+        if(document.getElementById("opcao").value == "BL"){
+            if (myInput.value > lista.get(document.getElementById("opcao").value)[Number(document.getElementById("potencia").value) - 1]){
+                myInput.value = '';
+                alert("Por favor coloque um número válido. " + lista.get(document.getElementById("opcao").value)[Number(document.getElementById("potencia").value) - 1]);
+            }
+        } else {
+            if (myInput.value > (Number(document.getElementById("valor1").value) * lista.get(document.getElementById("opcao").value)[Number(document.getElementById("potencia").value) - 1]) / 100) {
+                myInput.value = '';
+                alert("Por favor coloque um número válido.");
+            }
         }
     });
 }
 
 {
-    let opcao = document.getElementById("opcao");
-    var textoClon = document.getElementById("textoClon");
-
-    opcao.addEventListener("change", function () {
-        if (opcao.value == "AT") {
-            textoClon.textContent = "Ataque";
-        } if (opcao.value == "CT") {
-            textoClon.textContent = "Golpe Crítico";
-        } if (opcao.value == "BL") {
-            textoClon.textContent = "Bloquear";
-        } if (opcao.value == "EV") {
-            textoClon.textContent = "Evitar";
-        } if (opcao.value == "HP") {
-            textoClon.textContent = "HP Max";
+    document.getElementById("opcao").addEventListener("change", function () {
+        if (document.getElementById("opcao").value == "AT") {
+            document.getElementById("textoClon").textContent = "Ataque";
+        } if (document.getElementById("opcao").value == "CT") {
+            document.getElementById("textoClon").textContent = "Golpe Crítico";
+        } if (document.getElementById("opcao").value == "BL") {
+            document.getElementById("textoClon").textContent = "Bloquear";
+        } if (document.getElementById("opcao").value == "EV") {
+            document.getElementById("textoClon").textContent = "Evitar";
+        } if (document.getElementById("opcao").value == "HP") {
+            document.getElementById("textoClon").textContent = "HP Max";
         }
     })
-}   
+}
+
+{
+    let opcao = document.getElementById("potencia");
+    var textoClon = document.getElementById("clonNum");
+
+    opcao.addEventListener("change", function () {
+        if (opcao.value == "1") {
+            textoClon.src = "clon-null.png";
+        } if (opcao.value == "2") {
+            textoClon.src = "clon-null.png";
+        } if (opcao.value == "3") {
+            textoClon.src = "clon-3.png";
+        } if (opcao.value == "4") {
+            textoClon.src = "clon-4.png";
+        } if (opcao.value == "5") {
+            textoClon.src = "clon-null.png";
+        } if (opcao.value == "6") {
+            textoClon.src = "clon-null.png";
+        } if (opcao.value == "7") {
+            textoClon.src = "clon-null.png";
+        } if (opcao.value == "8") {
+            textoClon.src = "clon-8.png";
+        } if (opcao.value == "9") {
+            textoClon.src = "clon-null.png";
+        } if (opcao.value == "10") {
+            textoClon.src = "clon-10.png";
+        } if (opcao.value == "11") {
+            textoClon.src = "clon-null.png";
+        } if (opcao.value == "12") {
+            textoClon.src = "clon-null.png";
+        } if (opcao.value == "13") {
+            textoClon.src = "clon-null.png";
+        } if (opcao.value == "14") {
+            textoClon.src = "clon-null.png";
+        } if (opcao.value == "15") {
+            textoClon.src = "clon-15.png";
+        } 
+    })
+}  

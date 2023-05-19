@@ -50,14 +50,11 @@
                         <div class="imagem">
                             <img src="base.png" alt="Base do atributo">
                         </div>
-                        <input class="campo1" type="number" id="valor1">
+                        <input class="campo1" type="number" id="valor1" value="0">
                     </div>
                     <br>
 
                     <div class="caixa-selecao-com-imagem2">
-                        <div class="imagem2">
-                            <img src="clon.png" alt="Clon do atributo">
-                        </div>
                         <select class="sele2" id="potencia">
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -74,10 +71,18 @@
                             <option value="13">13</option>
                             <option value="14">14</option>
                             <option value="15">15</option>
-                            <input class="campo2" type="number" id="valor2">
+                            
                         </select>
+                        <div class="imagem2">
+                            <img src="clon.png" alt="Clon do atributo">
+                        </div>
+                        <div class="numClon">
+                            <img src="clon-null.png" alt="Clon do atributo" id="clonNum">
+                        </div>
+                        <input class="campo2" type="number" id="valor2" value="0">
+                        
                     </div>
-
+                
                     <table>
                         <tr>
                             <td><button class="botao" onclick="calcular()">Calcular</button></td>
