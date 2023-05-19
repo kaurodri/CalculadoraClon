@@ -246,3 +246,18 @@ button {
     margin-left: 10px;
     margin-top: -18px;
 }
+
+.titulocal {
+    position: absolute;
+    /*
+    margin-top: -60px;
+    margin-left: -7;
+    font-size: 0.9em;
+    color: rgb(46, 133, 138);
+    */
+    margin-top: -89px;
+    margin-left: -15;
+    font-size: 0.8em;
+    color: rgb(86, 148, 80);
+    font-family: system-ui;
+}
