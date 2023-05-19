@@ -4,14 +4,21 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     font: 16px "Arial";
 }
 
+/*
 main {
     width: 100%;
     height: 100%;
 }
+*/
 
 header {
     background: rgb(21, 20, 20);
@@ -42,12 +49,12 @@ header {
     padding: 10px 15px;
 }
 
-.caixa {
+/*.caixa {
     padding: 10px 10px;
     margin-right: 10px;
     width: 300px;
 }
-
+*/
 .caixa select a {
     margin-right: 10px;
 }
@@ -93,6 +100,7 @@ fieldset {
 main {
     font-size: 1em;
     color: purple;
+    /*
     margin-left: 30%;
     margin-top: 2%;
     justify-content: center;
@@ -160,7 +168,7 @@ button {
     border: 0;
     margin-bottom: 1em;
     padding: 0.2em 0.6em;
-    width: 10%;
+    width: 30%;
 }
 
 .sele1,
@@ -203,4 +211,20 @@ button {
 
 .sele2 {
     margin-right: 10px;
+}
+
+.container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #847f7f;
+    background-color: #c7c7c7;
+}
+
+.grupo-tabela {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: -80px;
+    margin-bottom: 10px;
 }
