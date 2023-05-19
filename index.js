@@ -168,3 +168,20 @@ function calcular() {
         } 
     })
 }  
+
+{
+
+    document.getElementById("opcao").addEventListener("change", function () {
+        if (document.getElementById("opcao").value == "AT") {
+            document.getElementById("baseatt").src = "att-at.png";
+        } if (document.getElementById("opcao").value == "CT") {
+            document.getElementById("baseatt").src = "att-ct.png";
+        } if (document.getElementById("opcao").value == "BL") {
+            document.getElementById("baseatt").src = "att-bl.png";
+        } if (document.getElementById("opcao").value == "EV") {
+            document.getElementById("baseatt").src = "att-ev.png";
+        } if (document.getElementById("opcao").value == "HP") {
+            document.getElementById("baseatt").src = "att-hp.png";
+        }
+    })
+}
