@@ -6,14 +6,14 @@ html, body { /* resetando o body */
     margin: 0;
 }
 
-/*
+
 body {
     
-    background: rgb(109,173,215);
-    background: linear-gradient(90deg, rgba(109,173,215,1) 0%, rgba(144,90,173,1) 100%);
+    background: rgb(45, 40, 40);
+    background: linear-gradient(90deg, rgba(45, 40, 40, 1) 0%, rgba(0, 0, 0,1) 100%);
     
 }
-*/
+
 
 .wrapper {
     height: 100%;
@@ -23,7 +23,7 @@ body {
 }
 
 form{
-    background: white;
+    /* background: white; */
     width: 700px;
     height: 350px;
     padding: 16px; /* aplica um espaçamento em todas as laterais, cima baixo direita esquerda*/
@@ -47,7 +47,7 @@ form{
     /*border: 1px solid #847f7f;*/
     /*background-color: #c7c7c7;*/
 
-    background-image: url('fundo.png');
+    background-image: url('fundo-0.png');
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
