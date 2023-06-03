@@ -1,6 +1,6 @@
 # CalculadoraClon
 
-Certifique-se de que seu Digimon tenha os status maximizados.
+A CCP é uma calculadora feita para auxiliar os jogadores de Digimon Masters Online a se certificarem que os status de seu parceiro estão devidamente maximizados.
 <hr>
 
 ### Como rodar o projeto:
