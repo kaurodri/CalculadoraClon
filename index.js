@@ -136,35 +136,35 @@ function calcular() {
 
     opcao.addEventListener("change", function () {
         if (opcao.value == "1") {
-            textoClon.src = "clon-1.png";
+            textoClon.src = "banco-imagens/clon-1.png";
         } if (opcao.value == "2") {
-            textoClon.src = "clon-2.png";
+            textoClon.src = "banco-imagens/clon-2.png";
         } if (opcao.value == "3") {
-            textoClon.src = "clon-3.png";
+            textoClon.src = "banco-imagens/clon-3.png";
         } if (opcao.value == "4") {
-            textoClon.src = "clon-4.png";
+            textoClon.src = "banco-imagens/clon-4.png";
         } if (opcao.value == "5") {
-            textoClon.src = "clon-5.png";
+            textoClon.src = "banco-imagens/clon-5.png";
         } if (opcao.value == "6") {
-            textoClon.src = "clon-6.png";
+            textoClon.src = "banco-imagens/clon-6.png";
         } if (opcao.value == "7") {
-            textoClon.src = "clon-null.png";
+            textoClon.src = "banco-imagens/clon-null.png";
         } if (opcao.value == "8") {
-            textoClon.src = "clon-8.png";
+            textoClon.src = "banco-imagens/clon-8.png";
         } if (opcao.value == "9") {
-            textoClon.src = "clon-null.png";
+            textoClon.src = "banco-imagens/clon-null.png";
         } if (opcao.value == "10") {
-            textoClon.src = "clon-10.png";
+            textoClon.src = "banco-imagens/clon-10.png";
         } if (opcao.value == "11") {
-            textoClon.src = "clon-null.png";
+            textoClon.src = "banco-imagens/clon-null.png";
         } if (opcao.value == "12") {
-            textoClon.src = "clon-null.png";
+            textoClon.src = "banco-imagens/clon-null.png";
         } if (opcao.value == "13") {
-            textoClon.src = "clon-null.png";
+            textoClon.src = "banco-imagens/clon-null.png";
         } if (opcao.value == "14") {
-            textoClon.src = "clon-null.png";
+            textoClon.src = "banco-imagens/clon-null.png";
         } if (opcao.value == "15") {
-            textoClon.src = "clon-15.png";
+            textoClon.src = "banco-imagens/clon-15.png";
         } 
     })
 }  
@@ -173,15 +173,15 @@ function calcular() {
 
     document.getElementById("opcao").addEventListener("change", function () {
         if (document.getElementById("opcao").value == "AT") {
-            document.getElementById("baseatt").src = "att-at.png";
+            document.getElementById("baseatt").src = "banco-imagens/att-at.png";
         } if (document.getElementById("opcao").value == "CT") {
-            document.getElementById("baseatt").src = "att-ct.png";
+            document.getElementById("baseatt").src = "banco-imagens/att-ct.png";
         } if (document.getElementById("opcao").value == "BL") {
-            document.getElementById("baseatt").src = "att-bl.png";
+            document.getElementById("baseatt").src = "banco-imagens/att-bl.png";
         } if (document.getElementById("opcao").value == "EV") {
-            document.getElementById("baseatt").src = "att-ev.png";
+            document.getElementById("baseatt").src = "banco-imagens/att-ev.png";
         } if (document.getElementById("opcao").value == "HP") {
-            document.getElementById("baseatt").src = "att-hp.png";
+            document.getElementById("baseatt").src = "banco-imagens/att-hp.png";
         }
     })
 }
