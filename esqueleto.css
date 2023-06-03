@@ -223,12 +223,20 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    /*
+    display: flex;
+    width: 100%
+    justify-content: space-around;
+    */
+    
     /*border: 1px solid #847f7f;*/
     /*background-color: #c7c7c7;*/
 
     background-image: url('fundo.png');
     background-size: auto;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .grupo-tabela {
@@ -261,3 +269,11 @@ button {
     color: rgb(86, 148, 80);
     font-family: system-ui;
 }
+/*
+@media screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+*/
