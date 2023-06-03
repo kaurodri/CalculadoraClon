@@ -136,17 +136,17 @@ function calcular() {
 
     opcao.addEventListener("change", function () {
         if (opcao.value == "1") {
-            textoClon.src = "clon-null.png";
+            textoClon.src = "clon-1.png";
         } if (opcao.value == "2") {
-            textoClon.src = "clon-null.png";
+            textoClon.src = "clon-2.png";
         } if (opcao.value == "3") {
             textoClon.src = "clon-3.png";
         } if (opcao.value == "4") {
             textoClon.src = "clon-4.png";
         } if (opcao.value == "5") {
-            textoClon.src = "clon-null.png";
+            textoClon.src = "clon-5.png";
         } if (opcao.value == "6") {
-            textoClon.src = "clon-null.png";
+            textoClon.src = "clon-6.png";
         } if (opcao.value == "7") {
             textoClon.src = "clon-null.png";
         } if (opcao.value == "8") {
