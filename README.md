@@ -1,4 +1,4 @@
-# CalculadoraClon <img src="https://wikimon.net/images/thumb/f/f1/Agumon_hakase_xantibody_digimon_profile.png/800px-Agumon_hakase_xantibody_digimon_profile.png" width="150px" style="position: absolute; right: 10px">
+# CalculadoraClon
 
 Certifique-se de que seu Digimon tenha os status maximizados.
 <hr>
